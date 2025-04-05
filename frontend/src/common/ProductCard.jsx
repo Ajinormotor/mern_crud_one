@@ -30,7 +30,7 @@ const handleModal = (pid)  => {
 {
 
 showModal  && <div  onClick={ () => setShowModal(false)}
-className='bg-black opacity-30 fixed w-full h-screen z-[100] cursor-pointer'></div>
+className='bg-black opacity-0 fixed w-full h-screen z-[100] cursor-pointer '></div>
 }
 
   

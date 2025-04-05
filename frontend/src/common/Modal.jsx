@@ -23,8 +23,9 @@ const Modal = ({p, setShowModal}) => {
     if(!success){
         toast.error(message)
     } else {
-        setShowModal(true)
         toast.success("Product updated successfully")
+        setShowModal(true)
+      
     }
   }
 
@@ -35,13 +36,13 @@ const Modal = ({p, setShowModal}) => {
 {
 
 setShowModal  && <div  onClick={ () => setShowModal(false)}
-className='bg-black opacity-30 fixed w-full h-screen z-[100] cursor-pointer'></div>
+className='bg-black opacity-30 fixed w-full h-screen z-[100] cursor-pointer top0'></div>
 }
 
        
         <ToastContainer  />
 
-      <div className='bg-black rounded-lg min-h-[300px] flex items-center justify-center w-[80%] z-[1000]'>
+      <div className='bg-black rounded-lg min-h-[300px] flex items-center justify-center w-[90%] md:w-[80%] z-[1000]'>
         <form className='w-[80%] flex flex-col gap-3 py-6'>
 
           <TextInput
